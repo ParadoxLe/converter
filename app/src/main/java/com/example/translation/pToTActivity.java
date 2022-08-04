@@ -42,10 +42,10 @@ public class pToTActivity extends AppCompatActivity implements View.OnClickListe
     Button save;
 
     //百度平台上的apikey
-    private String apiKey = "P0XPG9XysDa153H62g0euFYs";
+    private String apiKey = "*******";
 
     //百度平台上的应用secretKey
-    private String secretKey = "w8tEt5sAUT7wWuxtF0InT77Is9xcdLkE";
+    private String secretKey = "********";
 
     /**
      * 通用文字识别请求码
