@@ -83,7 +83,7 @@ public class rToTActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initUser() {
         if (fileFlashRecognizer == null) {
-            fileFlashRecognizer = new QCloudFlashRecognizer("1313190901", "AKIDzoOhjV0EBqFNEp9CySgeLlunPkob7MJ0", "RbU6RVIn20g6HBoAE2Zpn69vQfcJiqiI");
+            fileFlashRecognizer = new QCloudFlashRecognizer("***", "***", "***");
             fileFlashRecognizer.setCallback(this);
         }
     }
