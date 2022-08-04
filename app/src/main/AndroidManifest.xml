@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.translation">
+    <!--连接网络权限，用于执行云端语音能力 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!--读取网络信息状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--获取当前wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!--允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <!--外存储写权限，构建语法需要用到此权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--外存储读权限，构建语法需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!--配置权限，用来记录应用配置信Application息 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <!--相机权限配置，用来实现文字识别-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/jian"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/jian"
+        android:supportsRtl="true"
+        tools:replace="android:icon"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ModifyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".privaryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".agreementActivity"
+            android:exported="true" />
+        <activity
+            android:name=".loginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".pToTActivity"
+            android:exported="true" />
+        <activity
+            android:name=".rToTActivity"
+            android:exported="true" />
+        <activity
+            android:name=".vToTActivity"
+            android:exported="true" />
+        <activity
+            android:name=".tToVActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FunctionActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main2" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">简易翻译</string>
+    <string name="sentence">用 心 翻 译 每 一 句</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">我的</string>
+    <string name="title_dashboard">功能</string>
+    <string name="title_notifications">历史</string>
+</resources>
